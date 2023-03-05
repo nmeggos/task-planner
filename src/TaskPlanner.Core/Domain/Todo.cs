@@ -4,14 +4,16 @@ public class Todo
 {
     private Todo()
     {
-        
     }
     
-    private Todo(string title, string description)
+    private Todo(TodoId id, string title, string description)
     {
         Title = title;
         Description = description;
+        Id = id;
     }
+
+    public TodoId Id { get; private set; }
 
     public string Title { get; private set; }
 
@@ -21,6 +23,6 @@ public class Todo
 
     public static Todo Create(string title, string description)
     {
-        return new Todo(title, description);
+        return new Todo(new TodoId(Guid.NewGuid()), title, description);
     }
 }

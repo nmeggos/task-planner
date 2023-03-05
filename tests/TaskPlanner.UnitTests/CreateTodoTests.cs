@@ -1,7 +1,4 @@
-﻿using FluentAssertions;
-using TaskPlanner.Core.Domain;
-
-namespace TaskPlanner.UnitTests;
+﻿namespace TaskPlanner.UnitTests;
 
 public class CreateTaskTests
 {
@@ -11,7 +8,12 @@ public class CreateTaskTests
         var sut = Todo.Create("SomeTitle", "SomeDescription");
 
         sut.Should().NotBeNull();
-        
+
+        sut.Id
+            .Should()
+            .NotBeNull().And
+            .BeOfType<TodoId>();
+
         sut.Title
             .Should()
             .NotBeNull()
