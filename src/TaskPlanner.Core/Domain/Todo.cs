@@ -1,4 +1,4 @@
-﻿namespace TaskPlanner.Core.Domain.Tasks;
+﻿namespace TaskPlanner.Core.Domain;
 
 public class Todo
 {

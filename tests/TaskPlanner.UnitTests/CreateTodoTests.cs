@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using TaskPlanner.Core.Domain;
 
 namespace TaskPlanner.UnitTests;
 
