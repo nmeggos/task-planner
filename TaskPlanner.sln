@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPlanner.UnitTests", "tests\TaskPlanner.UnitTests\TaskPlanner.UnitTests.csproj", "{66D82275-5C77-4309-8227-802C87512BC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPlanner.Core.Tests", "tests\TaskPlanner.Core.Tests\TaskPlanner.Core.Tests.csproj", "{66D82275-5C77-4309-8227-802C87512BC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPlanner.Core", "src\TaskPlanner.Core\TaskPlanner.Core.csproj", "{A01B57A2-1538-4F37-BBBE-3CCF8D0F95B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPlanner.API", "src\TaskPlanner.API\TaskPlanner.API.csproj", "{6B23B0B9-0B65-4CC1-A260-60AE60506683}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPlanner.Infrastructure", "src\TaskPlanner.Infrastructure\TaskPlanner.Infrastructure.csproj", "{D8B146E6-9485-4BB2-8C29-AB5CD2F23C34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{19DCCD09-7531-42C0-9164-D6F3BAC3BE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskPlanner.ArchitecturalTests", "tests\TaskPlanner.ArchitecturalTests\TaskPlanner.ArchitecturalTests.csproj", "{0F29FC73-90B9-4FBA-9A05-20A2AB59A5AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +40,13 @@ Global
 		{D8B146E6-9485-4BB2-8C29-AB5CD2F23C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8B146E6-9485-4BB2-8C29-AB5CD2F23C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8B146E6-9485-4BB2-8C29-AB5CD2F23C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F29FC73-90B9-4FBA-9A05-20A2AB59A5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F29FC73-90B9-4FBA-9A05-20A2AB59A5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F29FC73-90B9-4FBA-9A05-20A2AB59A5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F29FC73-90B9-4FBA-9A05-20A2AB59A5AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66D82275-5C77-4309-8227-802C87512BC8} = {19DCCD09-7531-42C0-9164-D6F3BAC3BE33}
+		{0F29FC73-90B9-4FBA-9A05-20A2AB59A5AA} = {19DCCD09-7531-42C0-9164-D6F3BAC3BE33}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-﻿namespace TaskPlanner.UnitTests;
+﻿namespace TaskPlanner.Core.Tests;
 
 public class CreateTaskTests
 {
